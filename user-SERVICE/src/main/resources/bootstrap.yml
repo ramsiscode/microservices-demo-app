@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:9292
+      
+  application:
+    name: USER-SERVICE    
+
+server:
+  address: localhost
+ 

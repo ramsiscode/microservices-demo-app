@@ -1,0 +1,27 @@
+POST http://localhost:9002/users/
+GET http://localhost:9002/users/1
+{
+	"firstName": "Aman",
+	"lastName": "Kumar",
+	"email": "amankumar@cdac.in",
+	"departmentId" : 1
+}
+
+
+GET http://localhost:9191/users/getUserWithDepartment/1
+
+{
+    "user": {
+        "userId": 1,
+        "firstName": "Aman",
+        "lastName": "Kumar",
+        "email": "amankumar@cdac.in",
+        "departmentId": 1
+    },
+    "departmentDto": {
+        "departmentId": 1,
+        "departmentName": "Linux",
+        "departmentAddress": "Ghaziabad 3773",
+        "departmentCode": "P177IL"
+    }
+}

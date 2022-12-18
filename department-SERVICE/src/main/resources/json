@@ -1,0 +1,7 @@
+POST http://localhost:9001/departments/
+GET http://localhost:9001/departments/1
+{
+	"departmentName": "Linux",
+	"departmentAddress": "Ghaziabad 3773",
+	"departmentCode" : "P177IL"
+}

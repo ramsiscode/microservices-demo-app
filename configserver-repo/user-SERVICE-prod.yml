@@ -1,0 +1,21 @@
+
+server: 
+  port: 9002
+  
+spring:
+   application:
+       name: USER-SERVICE
+
+   datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/testdb?createDatabaseIfNotExist=true&useSSL=false
+    username: root
+    password: cctns@123
+   jpa:
+    properties:
+     hibernate:
+      dialect: org.hibernate.dialect.MySQL5Dialect
+     ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+    

@@ -1,0 +1,2 @@
+http://localhost:9191/actuator/hystrix.stream
+http://localhost:9295/hystrix/
