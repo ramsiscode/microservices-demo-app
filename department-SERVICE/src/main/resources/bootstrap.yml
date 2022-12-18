@@ -6,6 +6,19 @@ spring:
   
   application:
     name: DEPARTMENT-SERVICE     
+    
+  profiles: 
+   active: dev
+   cloud:
+    config:
+     profile: dev
+     name: department-SERVICE
+
+   management:
+    endpoints:
+     web:
+      exposure:
+        include: "*"
 
 server:
  address: localhost    

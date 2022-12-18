@@ -12,4 +12,3 @@ spring:
          git:
            uri: https://github.com/ramsiscode/config-server.git
            clone-on-start: true
-           

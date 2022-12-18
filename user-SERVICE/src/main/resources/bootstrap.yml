@@ -7,6 +7,19 @@ spring:
   application:
     name: USER-SERVICE    
 
+  profiles: 
+   active: dev
+   cloud:
+    config:
+     profile: dev
+     name: user-SERVICE
+
+   management:
+    endpoints:
+     web:
+      exposure:
+        include: "*"
+
 server:
   address: localhost
  

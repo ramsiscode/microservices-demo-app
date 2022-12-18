@@ -4,5 +4,21 @@ spring:
       enabled: true
       uri: http://localhost:9292
       
+  application:
+    name: HYSTRIX-DASHBOARD      
+      
+  profiles: 
+   active: dev
+   cloud:
+    config:
+     profile: dev
+     name: hystrix-dashboard
+
+   management:
+    endpoints:
+     web:
+      exposure:
+        include: "*"     
+      
 server:
  address: localhost      

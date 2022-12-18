@@ -4,7 +4,7 @@ server:
   
 spring:
    application:
-       name: SERVICE-REGISTRY  
+       name: SERVICE-REGISTRY 
 eureka:
   client:
     register-with-eureka: false

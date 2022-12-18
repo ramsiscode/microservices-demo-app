@@ -1,8 +1,38 @@
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - hystrix.stream
+          - "*"
+
 spring:
   cloud:
     config:
       enabled: true
       uri: http://localhost:9292
+      profile: dev
+      name: gateway
+      
+    gateway:
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Origin
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowed-origins: "*"
+            allowed-methods: "*"
+            allowed-headers: "*"    
+      
+      
+  profiles: 
+   active: dev
+  application:
+    name: API-GATEWAY
+     
+    
       
 server:
- address: localhost      
+ address: localhost   
+  
